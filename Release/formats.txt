@@ -1,0 +1,7 @@
+Graph xy|*.* :: s1 x_1 y_1
+Graph xy1y2|*.* :: x_1_2 y_1 y_2
+Graph xy1y2y3|*.* :: x_1_2_3 y_1 y_2 y_3
+Graph xy1y2y3y4|*.* :: x_1_2_3_4 y_1 y_2 y_3 y_4
+I-V curve|*.* :: s1 i x_1 e y_1 e
+Stress curve|*.* :: s1 i x_1 y_1
+TG|*.* :: i x_1_2_3_4 y_1 y_2 y_3 y_4
