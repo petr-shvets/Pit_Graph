@@ -1,0 +1,20 @@
+f_mode: 1
+separator: 0
+polar units: 1
+view mode: 0
+EPS scale: 2.5
+move scale: 0.005
+measurement line width: 2
+measurement line color: 100
+measurement text size: 20
+measurement text color: 100
+Voight parameters
+dH: 0.2, H_step: 0.01
+dFWHM: 5, FWHM_step: 0.01
+dx: 5, x_step: 0.01
+n_min: 0, n_step: 0.01, n_max: 1
+Colormap R: 0 : 127 : 160 : 0 : 127
+Colormap G: 0 : 127 : 160 : 127 : 0
+Colormap B: 127 : 0 : 160 : 127 : 0
+Colormap P: 0 : 0.25 : 0.5 : 0.75 : 1
+Colormap N: 1

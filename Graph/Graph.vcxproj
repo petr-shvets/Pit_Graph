@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4358CDB-74BA-4462-BD41-B82C123C4A9E}</ProjectGuid>
+    <RootNamespace>Graph</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>Pit_Graph</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Pit_Graph</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddFuncDlg.h" />
+    <ClInclude Include="AppDlg.h" />
+    <ClInclude Include="AxisDlg.h" />
+    <ClInclude Include="CAnalyzeInt.h" />
+    <ClInclude Include="CAnalyzePolynomDlg.h" />
+    <ClInclude Include="CAppColDlg.h" />
+    <ClInclude Include="CAveParamDlg.h" />
+    <ClInclude Include="CBatchAnalyzeDlg.h" />
+    <ClInclude Include="CBatchTransformDlg.h" />
+    <ClInclude Include="CBGPolyDlg.h" />
+    <ClInclude Include="CCombineDlg.h" />
+    <ClInclude Include="CCropDlg.h" />
+    <ClInclude Include="CGraph.h" />
+    <ClInclude Include="CItoGDlg.h" />
+    <ClInclude Include="CMergeDlg.h" />
+    <ClInclude Include="corona.h" />
+    <ClInclude Include="CPaetteDlg.h" />
+    <ClInclude Include="CPolyAppDlg.h" />
+    <ClInclude Include="CReclorDlg.h" />
+    <ClInclude Include="CreEPS.hpp" />
+    <ClInclude Include="CreEPS_Types.hpp" />
+    <ClInclude Include="CRemovePointsDlg.h" />
+    <ClInclude Include="CSetColDlg.h" />
+    <ClInclude Include="CSettingsDlg.h" />
+    <ClInclude Include="CSetVoightDlg.h" />
+    <ClInclude Include="CShapeCorrDlg.h" />
+    <ClInclude Include="CSplineDlg.h" />
+    <ClInclude Include="CSplitDlg.h" />
+    <ClInclude Include="CTextDlg.h" />
+    <ClInclude Include="CTL_app.h" />
+    <ClInclude Include="CVoightNDlg.h" />
+    <ClInclude Include="DXSurfaceMgr.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphDlg.h" />
+    <ClInclude Include="GraphDoc.h" />
+    <ClInclude Include="GraphView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SizeDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StepCCDlg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tinyexpr.h" />
+    <ClInclude Include="TransformDlg.h" />
+    <ClInclude Include="VoightDlg.h" />
+    <ClInclude Include="WndSizeDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddFuncDlg.cpp" />
+    <ClCompile Include="AppDlg.cpp" />
+    <ClCompile Include="AxisDlg.cpp" />
+    <ClCompile Include="CAnalyzeInt.cpp" />
+    <ClCompile Include="CAnalyzePolynomDlg.cpp" />
+    <ClCompile Include="CAppColDlg.cpp" />
+    <ClCompile Include="CAveParamDlg.cpp" />
+    <ClCompile Include="CBatchAnalyzeDlg.cpp" />
+    <ClCompile Include="CBatchTransformDlg.cpp" />
+    <ClCompile Include="CBGPolyDlg.cpp" />
+    <ClCompile Include="CCombineDlg.cpp" />
+    <ClCompile Include="CCropDlg.cpp" />
+    <ClCompile Include="CItoGDlg.cpp" />
+    <ClCompile Include="CMergeDlg.cpp" />
+    <ClCompile Include="CPaetteDlg.cpp" />
+    <ClCompile Include="CPolyAppDlg.cpp" />
+    <ClCompile Include="CReclorDlg.cpp" />
+    <ClCompile Include="CreEPS.cpp" />
+    <ClCompile Include="CRemovePointsDlg.cpp" />
+    <ClCompile Include="CSetColDlg.cpp" />
+    <ClCompile Include="CSettingsDlg.cpp" />
+    <ClCompile Include="CSetVoightDlg.cpp" />
+    <ClCompile Include="CShapeCorrDlg.cpp" />
+    <ClCompile Include="CSplineDlg.cpp" />
+    <ClCompile Include="CSplitDlg.cpp" />
+    <ClCompile Include="CTextDlg.cpp" />
+    <ClCompile Include="CTL_app.cpp" />
+    <ClCompile Include="CVoightNDlg.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="GraphDlg.cpp" />
+    <ClCompile Include="GraphDoc.cpp" />
+    <ClCompile Include="GraphView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="SizeDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StepCCDlg.cpp" />
+    <ClCompile Include="tinyexpr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TransformDlg.cpp" />
+    <ClCompile Include="VoightDlg.cpp" />
+    <ClCompile Include="WndSizeDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Graph.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Graph.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\Graph.ico" />
+    <Image Include="res\GraphDoc.ico" />
+    <Image Include="res\palette1.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="corona.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Graph.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
